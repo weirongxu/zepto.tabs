@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Zepto Tabs</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome-1"><link rel="stylesheet" href="index.css"></head><body><h1>Zepto Tabs</h1><pre><code>$(".tabs1").tabs({
+  touch: false
+  animate: false
+});</code></pre><div class="tabs tabs1"><ul class="header"><li>TAB1 </li><li>TAB2</li><li>TAB3</li></ul><div class="body"><ul><li><a href="#">item1.0</a></li><li><a href="#">item1.1</a></li><li><a href="#">item1.2</a></li><li><a href="#">item1.3</a></li><li><a href="#">item1.4</a></li><li><a href="#">item1.5</a></li><li><a href="#">item1.6</a></li><li><a href="#">item1.7</a></li></ul><ul><li><a href="#">item2.0</a></li><li><a href="#">item2.1</a></li><li><a href="#">item2.2</a></li><li><a href="#">item2.3</a></li><li><a href="#">item2.4</a></li><li><a href="#">item2.5</a></li><li><a href="#">item2.6</a></li><li><a href="#">item2.7</a></li></ul><ul><li><a href="#">item3.0</a></li><li><a href="#">item3.1</a></li><li><a href="#">item3.2</a></li><li><a href="#">item3.3</a></li><li><a href="#">item3.4</a></li><li><a href="#">item3.5</a></li><li><a href="#">item3.6</a></li><li><a href="#">item3.7</a></li></ul></div></div><pre><code>$(".tabs2").tabs({
+  touch: true
+  animate: true
+});</code></pre><div class="tabs tabs2"><ul class="header"><li>TAB1 </li><li>TAB2</li><li>TAB3</li></ul><div class="body"><ul><li><a href="#">item1.0</a></li><li><a href="#">item1.1</a></li><li><a href="#">item1.2</a></li><li><a href="#">item1.3</a></li><li><a href="#">item1.4</a></li><li><a href="#">item1.5</a></li><li><a href="#">item1.6</a></li><li><a href="#">item1.7</a></li></ul><ul><li><a href="#">item2.0</a></li><li><a href="#">item2.1</a></li><li><a href="#">item2.2</a></li><li><a href="#">item2.3</a></li><li><a href="#">item2.4</a></li><li><a href="#">item2.5</a></li><li><a href="#">item2.6</a></li><li><a href="#">item2.7</a></li></ul><ul><li><a href="#">item3.0</a></li><li><a href="#">item3.1</a></li><li><a href="#">item3.2</a></li><li><a href="#">item3.3</a></li><li><a href="#">item3.4</a></li><li><a href="#">item3.5</a></li><li><a href="#">item3.6</a></li><li><a href="#">item3.7</a></li></ul></div></div><script src="zepto.min.js"></script><script src="zepto.tabs.min.js"></script><script>(function() {
+  (function($) {
+    $(".tabs1").tabs({
+      touch: false,
+      animate: false
+    });
+    return $(".tabs2").tabs({
+      touch: true,
+      animate: true
+    });
+  })(Zepto);
+
+}).call(this);
+</script></body></html>

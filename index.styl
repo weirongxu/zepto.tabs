@@ -1,0 +1,61 @@
+@import nib
+
+body
+  margin 0
+
+*, :before, :after
+  box-sizing border-box
+
+.clearfix
+  clearfix()
+
+a
+  color #494949
+  text-decoration none
+
+ul
+  list-style-type none
+  padding 0
+
+.tabs
+  ul.header
+    @extend .clearfix
+    margin auto
+    background linear-gradient(180deg, rgba(255,255,255,1) 0, rgba(209,209,209,1) 8%, rgba(244,244,244,1) 95%, rgba(255,255,255,1) 100%)
+    li
+      padding 10px 0
+      width (100 / 3) + '%'
+      float left
+      text-align center
+      border-top 1px solid #818181
+      border-bottom 1px solid lighten(#818181, 10%)
+      &.active
+        background-color white
+        border-top 2px solid #0D6EFF
+        border-bottom none
+  .body
+    padding-left 5%
+    padding-right 5%
+    width 100%
+
+    margin-top 10px
+
+    @extend .clearfix
+    ul
+      width 100%
+      background-color white
+      li
+        a
+          width 100%
+          display block
+          word-wrap break-word
+          white-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+    li
+      width 100%
+      height 40px
+      line-height @height
+      word-wrap break-word
+      text-overflow ellipsis
+      border-bottom 1px dotted darken(#DDD, 10%)
